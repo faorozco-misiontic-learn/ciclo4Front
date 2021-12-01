@@ -1,60 +1,63 @@
-import React from 'react';
-import { request } from '../../helper/helper';
-import { Container, Row } from 'react-bootstrap';
-import DataGrid from '../../grid/grid';
-import ConfirmationPromprs from '../../prompts/confirmation';
-import Loading from '../../loading/loading';
-import MessagePrompt from '../../prompts/message';
+import React from "react";
+import { request } from "../../helper/helper";
+import { Container, Row } from "react-bootstrap";
+import DataGrid from "../../grid/grid";
+import ConfirmationPromprs from "../../prompts/confirmation";
+import Loading from "../../loading/loading";
+import MessagePrompt from "../../prompts/message";
 
 const columns = [
   {
-    dataField: '_id',
-    text: 'Product ID',
+    dataField: "_id",
+    text: "Product ID",
     hidden: true,
   },
   {
-    dataField: 'fila_1',
-    text: 'fila_1',
+    dataField: "fila_1",
+    text: "Primer Nombre",
   },
   {
-    dataField: 'fila_1',
-    text: 'fila_1',
+    dataField: "fila_2",
+    text: "Segundo Nombre",
   },
   {
-    dataField: 'fila_2',
-    text: 'fila_2',
+    dataField: "fila_3",
+    text: "Primer Apellido",
   },
   {
-    dataField: 'fila_3',
-    text: 'fila_3',
+    dataField: "fila_4",
+    text: "Segundo Apellido",
   },
   {
-    dataField: 'fila_4',
-    text: 'fila_4',
+    dataField: "fila_5",
+    text: "Tipo id",
   },
   {
-    dataField: 'fila_5',
-    text: 'fila_5',
+    dataField: "fila_6",
+    text: "# id",
   },
   {
-    dataField: 'fila_6',
-    text: 'fila_6',
+    dataField: "fila_7",
+    text: "Dirección",
   },
   {
-    dataField: 'fila_7',
-    text: 'fila_7',
+    dataField: "fila_8",
+    text: "Celular",
   },
   {
-    dataField: 'fila_8',
-    text: 'fila_8',
+    dataField: "fila_9",
+    text: "Ciudad",
+    hidden: true,
   },
   {
-    dataField: 'fila_9',
-    text: 'fila_9',
+    dataField: "fila_10",
+    text: "Departamento",
+    hidden: true,
   },
   {
-    dataField: 'fila_10',
-    text: 'fila_10',
+    dataField: "fila_11",
+    text: "Celular",
+    hidden: true,
   },
 ];
 
@@ -65,12 +68,12 @@ export default class CrudSimpleBuscar extends React.Component {
       loading: false,
       idCrudSimple: null,
       confirmation: {
-        title: 'Eliminar',
-        text: '¿Deseas eliminar?',
+        title: "Eliminar",
+        text: "¿Deseas eliminar?",
         show: false,
       },
       message: {
-        text: '',
+        text: "",
         show: false,
       },
     };
@@ -84,7 +87,7 @@ export default class CrudSimpleBuscar extends React.Component {
   onClickEditButton(row) {
     this.props.setIdCrudSimple(row._id);
 
-    this.props.changeTab('editar');
+    this.props.changeTab("editar");
   }
 
   onClickDeleteButton(row) {
