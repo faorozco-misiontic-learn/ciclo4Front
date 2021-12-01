@@ -22,17 +22,10 @@ export default class Menu extends React.Component {
     return (
       <Navbar fixed="top" id="navbar" bg="primary" variant="dark">
         <Container>
-          {/* Logo
-            <img
-              id="navbar-img"
-              src={
-                'https://www.misiontic2022.gov.co/746/channels-642_misiontic_logo.png'
-              }
-            />
-              */}
+          <img id="navbar-img" src={"https://www.misiontic2022.gov.co/746/channels-642_misiontic_logo.png"} />
+
           <Navbar.Brand href="/" id="navbar-in">
-            Misión Tic
-            <span id="navbar-sub-brand"> 2022</span>
+            <span id="navbar-sub-brand"> </span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
