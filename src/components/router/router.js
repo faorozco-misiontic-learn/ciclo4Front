@@ -5,6 +5,7 @@ import PrivateRoute from "../auth/privateroute";
 import login from "../login/login";
 import CrudSimple from "../crudSimple";
 import Home from "../pages/home/home";
+import SignInSide from "../sign-in-side/signInSide";
 
 export default function AppRouter() {
   return (
@@ -12,6 +13,7 @@ export default function AppRouter() {
       <Switch>
         <Route exact path={["/"]} component={Home} />
         <Route exact path={["/login"]} component={login} />
+        <Route exact path={["/signinside"]} component={SignInSide} />
         <PrivateRoute exact path="/crudSimple" component={CrudSimple} />
         <Route
           path={"*"}
