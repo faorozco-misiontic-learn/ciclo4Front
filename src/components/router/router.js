@@ -10,7 +10,7 @@ export default function AppRouter() {
   return (
     <Router>
       <Switch>
-        <Route exact path={["/login"]} component={Home} />
+        <Route exact path={["/"]} component={Home} />
         <Route exact path={["/login"]} component={login} />
         <PrivateRoute exact path="/crudSimple" component={CrudSimple} />
         <Route
