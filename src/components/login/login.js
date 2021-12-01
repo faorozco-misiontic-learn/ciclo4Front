@@ -30,7 +30,7 @@ export default class login extends React.Component {
       })
       .then((response) => {
         if (isNull(response.data.token)) {
-          alert("Usiario y/o contraseña invalidos");
+          alert("Usuario y/o contraseña inválidos");
         } else {
           cookies.set("_s", response.data.token, {
             path: "/",
