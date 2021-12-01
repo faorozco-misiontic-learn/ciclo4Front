@@ -109,7 +109,7 @@ export default class SignInSide extends React.Component {
           <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
             <Box
               sx={{
-                my: 15,
+                my: 30,
                 mx: 4,
                 display: "flex",
                 flexDirection: "column",
@@ -120,7 +120,7 @@ export default class SignInSide extends React.Component {
                 <LockOutlinedIcon />
               </Avatar>
               <Typography component="h1" variant="h5">
-                Sign in
+                Iniciar Sesión
               </Typography>
               <Form>
                 <Form.Group>
